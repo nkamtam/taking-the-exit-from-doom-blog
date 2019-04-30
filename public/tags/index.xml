@@ -1,0 +1,32 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Tags on Welome to Nivedita&#39;s Blog</title>
+		<link>/tags/</link>
+		<description>Recent content in Tags on Welome to Nivedita&#39;s Blog</description>
+		<generator>Hugo 0.55.3 -- gohugo.io</generator>
+		<language>en-us</language>
+		<lastBuildDate>Mon, 22 Apr 2019 00:00:00 +0000</lastBuildDate>
+		<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+		<item>
+			<title>R Markdown</title>
+			<link>/tags/r-markdown/</link>
+			<pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+			<guid isPermaLink="true">/tags/r-markdown/</guid>
+			<description></description>
+		</item>
+		<item>
+			<title>uncc</title>
+			<link>/tags/uncc/</link>
+			<pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+			<guid isPermaLink="true">/tags/uncc/</guid>
+			<description></description>
+		</item>
+		<item>
+			<title>visual analytics</title>
+			<link>/tags/visual-analytics/</link>
+			<pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+			<guid isPermaLink="true">/tags/visual-analytics/</guid>
+			<description></description>
+		</item>
+	</channel>
+</rss>

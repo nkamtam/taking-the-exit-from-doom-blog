@@ -1,0 +1,8 @@
+theme = "slick"
+baseURL = "/"
+languageCode = "en-us"
+title = "Welome to Nivedita's Blog"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+[params]
+    author = "Nivedita Kamtam"
+    dateFormat = "2006/01/02"

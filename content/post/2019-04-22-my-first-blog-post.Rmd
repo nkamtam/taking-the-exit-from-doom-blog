@@ -1,0 +1,112 @@
+---
+title: "Taking the Exit From Doom!"
+author: "Nivedita Kamtam"
+date: '2019-04-22'
+description: null
+menu: main
+series:
+- ~
+slug: my-first-blog-post
+tags:
+- visual analytics
+- uncc
+- R Markdown
+categories: []
+type: post
+---
+
+<center>![](/happy_sad.jpg){width=500px height=300px}</center>
+
+
+Mental health is integral to living a healthy and balanced life. According to the National Alliance of Mental Illness (NAMI), one in five American experience mental health issues which translates to more than 40 million adults a year.
+
+<center><bold>WHY IS MENTAL HEALTH IMPORTANT?</bold></center>
+
+Emotional and mental health is important because it impacts your thoughts, behaviors and emotions. Being healthy emotionally can promote productivity and effectiveness in activities like work, school or caregiving. It plays an important part in the health of your relationships, and allows you to adapt to changes in your life and cope with adversity.
+
+```{r load-packages-data, echo=FALSE, message=FALSE, warning=FALSE}
+library(tidyverse)
+
+df_raw <- read_csv("./Ginzberg_depression.csv")
+df <- df_raw[,-1] #delete ID column
+```
+
+<center>Data Source: http://vincentarelbundock.github.io/Rdatasets/datasets.html</center>
+
+```{r glimpse, echo=FALSE}
+glimpse(df)
+
+```
+
+```{r plot-1, echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+ggplot(df, aes(x = adjsimp, y = adjdep)) +
+    geom_point()
+
+```
+
+This is the scatterplot of 'adjdep' vs. 'adjsimp' where 'adjsimp' is the Adjusted Simplicity: Simplicity adjusted (by regression) for other variables thought to influence depression and 'adjdep' is Adjusted Depression. We can clearly visualize that as a subject's need to see the world in black and white (adjusted) increases, the higher the adjusted depression level is.
+
+Metadata Details: http://vincentarelbundock.github.io/Rdatasets/doc/carData/Ginzberg.html
+
+According to https://www.statnews.com/2017/05/31/mental-health-medicine/ :
+
+
+Mental disorders affect nearly 20 percent of American adults; nearly 4 percent are severely impaired and classified as having serious mental illness. <img style="float: left;" src="/MentalHealthStigma.png", width="500px", height="300px"> These disorders are often associated with chronic physical illnesses such as heart disease and diabetes. They also increase the risk of physical injury and death through accidents, violence, and suicide.
+
+Mental illnesses affect 19% of the adult population, 46% of teenagers and 13% of children each year. People struggling with their mental health may be in your family, live next door, teach your children, work in the next cubicle or sit in the same church pew.
+
+However, only half of those affected receive treatment, often because of the stigma attached to mental health. Untreated, mental illness can contribute to higher medical expenses, poorer performance at school and work, fewer employment opportunities and increased risk of suicide.
+
+
+
+
+
+```{r non-adj-plots, echo=FALSE, message=FALSE, warning=FALSE}
+
+
+ggplot(df, aes(x = simplicity, y = depression)) +
+    geom_point()
+
+```
+
+We can see that, similar to using adjusted values, as a subject's need to see the world in black and white increases, the higher their self-reported depression level is.
+
+According to https://www.nami.org/blogs/nami-blog/october-2017/9-ways-to-fight-mental-health-stigma :
+
+Most people who live with mental illness have, at some point, been blamed for their condition. They’ve been called names. Their symptoms have been referred to as “a phase” or something they can control “if they only tried.” They have been illegally discriminated against, with no justice. This is the unwieldy power that stigma holds.
+
+Stigma causes people to feel ashamed for something that is out of their control. Worst of all, stigma prevents people from seeking the help they need. For a group of people who already carry such a heavy burden, stigma is an unacceptable addition to their pain. And while stigma has reduced in recent years, the pace of progress has not been quick enough.
+
+(Source: https://blog.doctorondemand.com/why-its-important-to-care-for-your-mental-health-834c8670b889)
+
+
+<img style="float: right;" src="/main_image.jpg", width="500px", height="300px">
+
+<bold>HOW CAN YOU IMPROVE YOUR EMOTIONAL HEALTH DAY-TO-DAY?</bold>
+
+There are steps you can take to improve your mental health everyday. Small things like exercising, eating a balanced and healthy meals, opening up to other people in your life, taking a break when you need to, remembering something you are grateful for and getting a good night’s sleep, can be helpful in boosting your emotional health.
+
+
+
+
+
+
+
+
+> "You may have to fight a battle more than once." - MARGARET THATCHER
+
+<bold>WHEN IS A GOOD TIME TO REACH OUT FOR HELP?</bold>
+
+Issues related to mental health can impact different people in different ways. If you start to see changes in your overall happiness and relationships, there are always ways get the support you want. Here are some ways you can get help:
+
+1. Connect with other individuals, friends and family. Reaching out and opening up to other people in your life can help provide emotional support.
+
+2. Learn more about mental health. There are many resources you can turn to for learning more about emotional health. Some examples include Psychology Today, National Institute of Mental Health, and Anxiety and Depression Association of America.
+
+3. Talk to a professional. If you start to feel like your emotional health is starting to impact you, it may be time to reach out for extra support.
+
+
+
+
+<center>![](/peace.jpg){width=200px height=400px}</center>

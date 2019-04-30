@@ -1,0 +1,15 @@
+{{- define "main" }}
+<div>
+  <p>{{ .Title }}:</p>
+  <ul>
+    {{- $type := .Type }}
+    {{- range .Data.Terms.ByCount }}
+      {{- $perma := lower (path.Join $type (urlize .Name)) }}
+    <li>
+      <a href="{{ $perma | absURL }}">{{ .Name }}</a>
+      <span>&#40;{{ .Count }}&#41;</span>
+    </li>
+    {{- end }}
+  </ul>
+</div>
+{{- end }}

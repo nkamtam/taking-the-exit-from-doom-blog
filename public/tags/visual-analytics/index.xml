@@ -1,0 +1,69 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>visual analytics on Welome to Nivedita&#39;s Blog</title>
+		<link>/tags/visual-analytics/</link>
+		<description>Recent content in visual analytics on Welome to Nivedita&#39;s Blog</description>
+		<generator>Hugo 0.55.3 -- gohugo.io</generator>
+		<language>en-us</language>
+		<lastBuildDate>Mon, 22 Apr 2019 00:00:00 +0000</lastBuildDate>
+		<atom:link href="/tags/visual-analytics/index.xml" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Taking the Exit From Doom!</title>
+			<link>/post/my-first-blog-post/</link>
+			<pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+			<guid isPermaLink="true">/post/my-first-blog-post/</guid>
+			<description>
+
+
+&lt;center&gt;
+&lt;img src=&#34;/happy_sad.jpg&#34; width=&#34;500&#34; height=&#34;300&#34; /&gt;
+&lt;/center&gt;
+&lt;p&gt;Mental health is integral to living a healthy and balanced life. According to the National Alliance of Mental Illness (NAMI), one in five American experience mental health issues which translates to more than 40 million adults a year.&lt;/p&gt;
+&lt;center&gt;
+&lt;bold&gt;WHY IS MENTAL HEALTH IMPORTANT?&lt;/bold&gt;
+&lt;/center&gt;
+&lt;p&gt;Emotional and mental health is important because it impacts your thoughts, behaviors and emotions. Being healthy emotionally can promote productivity and effectiveness in activities like work, school or caregiving. It plays an important part in the health of your relationships, and allows you to adapt to changes in your life and cope with adversity.&lt;/p&gt;
+&lt;center&gt;
+Data Source: &lt;a href=&#34;http://vincentarelbundock.github.io/Rdatasets/datasets.html&#34; class=&#34;uri&#34;&gt;http://vincentarelbundock.github.io/Rdatasets/datasets.html&lt;/a&gt;
+&lt;/center&gt;
+&lt;pre&gt;&lt;code&gt;## Observations: 82
+## Variables: 6
+## $ simplicity &amp;lt;dbl&amp;gt; 0.92983, 0.91097, 0.53366, 0.74118, 0.53366, 0.6279...
+## $ fatalism   &amp;lt;dbl&amp;gt; 0.35589, 1.18439, -0.05837, 0.35589, 0.77014, 1.391...
+## $ depression &amp;lt;dbl&amp;gt; 0.59870, 0.72787, 0.53411, 0.56641, 0.50182, 0.5664...
+## $ adjsimp    &amp;lt;dbl&amp;gt; 0.75934, 0.72717, 0.62176, 0.83522, 0.47697, 0.4066...
+## $ adjfatal   &amp;lt;dbl&amp;gt; 0.10673, 0.99915, 0.03811, 0.42218, 0.81423, 1.2326...
+## $ adjdep     &amp;lt;dbl&amp;gt; 0.41865, 0.51688, 0.70699, 0.65639, 0.53518, 0.3404...&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2019-04-22-my-first-blog-post_files/figure-html/plot-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This is the scatterplot of ‘adjdep’ vs. ‘adjsimp’ where ‘adjsimp’ is the Adjusted Simplicity: Simplicity adjusted (by regression) for other variables thought to influence depression and ‘adjdep’ is Adjusted Depression. We can clearly visualize that as a subject’s need to see the world in black and white (adjusted) increases, the higher the adjusted depression level is.&lt;/p&gt;
+&lt;p&gt;Metadata Details: &lt;a href=&#34;http://vincentarelbundock.github.io/Rdatasets/doc/carData/Ginzberg.html&#34; class=&#34;uri&#34;&gt;http://vincentarelbundock.github.io/Rdatasets/doc/carData/Ginzberg.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;According to &lt;a href=&#34;https://www.statnews.com/2017/05/31/mental-health-medicine/&#34; class=&#34;uri&#34;&gt;https://www.statnews.com/2017/05/31/mental-health-medicine/&lt;/a&gt; :&lt;/p&gt;
+&lt;p&gt;Mental disorders affect nearly 20 percent of American adults; nearly 4 percent are severely impaired and classified as having serious mental illness. &lt;img style=&#34;float: left;&#34; src=&#34;/MentalHealthStigma.png&#34;, width=&#34;500px&#34;, height=&#34;300px&#34;&gt; These disorders are often associated with chronic physical illnesses such as heart disease and diabetes. They also increase the risk of physical injury and death through accidents, violence, and suicide.&lt;/p&gt;
+&lt;p&gt;Mental illnesses affect 19% of the adult population, 46% of teenagers and 13% of children each year. People struggling with their mental health may be in your family, live next door, teach your children, work in the next cubicle or sit in the same church pew.&lt;/p&gt;
+&lt;p&gt;However, only half of those affected receive treatment, often because of the stigma attached to mental health. Untreated, mental illness can contribute to higher medical expenses, poorer performance at school and work, fewer employment opportunities and increased risk of suicide.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2019-04-22-my-first-blog-post_files/figure-html/non-adj-plots-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;We can see that, similar to using adjusted values, as a subject’s need to see the world in black and white increases, the higher their self-reported depression level is.&lt;/p&gt;
+&lt;p&gt;According to &lt;a href=&#34;https://www.nami.org/blogs/nami-blog/october-2017/9-ways-to-fight-mental-health-stigma&#34; class=&#34;uri&#34;&gt;https://www.nami.org/blogs/nami-blog/october-2017/9-ways-to-fight-mental-health-stigma&lt;/a&gt; :&lt;/p&gt;
+&lt;p&gt;Most people who live with mental illness have, at some point, been blamed for their condition. They’ve been called names. Their symptoms have been referred to as “a phase” or something they can control “if they only tried.” They have been illegally discriminated against, with no justice. This is the unwieldy power that stigma holds.&lt;/p&gt;
+&lt;p&gt;Stigma causes people to feel ashamed for something that is out of their control. Worst of all, stigma prevents people from seeking the help they need. For a group of people who already carry such a heavy burden, stigma is an unacceptable addition to their pain. And while stigma has reduced in recent years, the pace of progress has not been quick enough.&lt;/p&gt;
+&lt;p&gt;(Source: &lt;a href=&#34;https://blog.doctorondemand.com/why-its-important-to-care-for-your-mental-health-834c8670b889&#34; class=&#34;uri&#34;&gt;https://blog.doctorondemand.com/why-its-important-to-care-for-your-mental-health-834c8670b889&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;img style=&#34;float: right;&#34; src=&#34;/main_image.jpg&#34;, width=&#34;500px&#34;, height=&#34;300px&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;bold&gt;HOW CAN YOU IMPROVE YOUR EMOTIONAL HEALTH DAY-TO-DAY?&lt;/bold&gt;&lt;/p&gt;
+&lt;p&gt;There are steps you can take to improve your mental health everyday. Small things like exercising, eating a balanced and healthy meals, opening up to other people in your life, taking a break when you need to, remembering something you are grateful for and getting a good night’s sleep, can be helpful in boosting your emotional health.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“You may have to fight a battle more than once.” - MARGARET THATCHER&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;bold&gt;WHEN IS A GOOD TIME TO REACH OUT FOR HELP?&lt;/bold&gt;&lt;/p&gt;
+&lt;p&gt;Issues related to mental health can impact different people in different ways. If you start to see changes in your overall happiness and relationships, there are always ways get the support you want. Here are some ways you can get help:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;&lt;p&gt;Connect with other individuals, friends and family. Reaching out and opening up to other people in your life can help provide emotional support.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Learn more about mental health. There are many resources you can turn to for learning more about emotional health. Some examples include Psychology Today, National Institute of Mental Health, and Anxiety and Depression Association of America.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Talk to a professional. If you start to feel like your emotional health is starting to impact you, it may be time to reach out for extra support.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;center&gt;
+&lt;img src=&#34;/peace.jpg&#34; width=&#34;200&#34; height=&#34;400&#34; /&gt;
+&lt;/center&gt;
+</description>
+		</item>
+	</channel>
+</rss>

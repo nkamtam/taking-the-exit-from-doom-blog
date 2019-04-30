@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "theme = \"slick\"\nbaseURL = \"/\"\nlanguageCode = \"en-us\"\ntitle = \"Welome to Nivedita's Blog\"\nignoreFiles = [\"\\\\.Rmd$\", \"\\\\.Rmarkdown$\", \"_files$\", \"_cache$\"]\n[params]\n    author = \"Nivedita Kamtam\"\n    dateFormat = \"2006/01/02\"",
+    "created" : 1555973355838.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3217004513",
+    "id" : "B85D686B",
+    "lastKnownWriteTime" : 1556641434,
+    "last_content_update" : 1556641434994,
+    "path" : "C:/Users/nived/Desktop/Nivedita/UNCC_DSBA/VisualAnalytics/test_pbset4/config.toml",
+    "project_path" : "config.toml",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "text"
+}
